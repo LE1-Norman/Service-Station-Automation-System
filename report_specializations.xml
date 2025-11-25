@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<service_station>
+    <specializations>
+        <row>
+            <ID>29</ID>
+            <Специальность>Электрик</Специальность>
+        </row>
+        <row>
+            <ID>31</ID>
+            <Специальность>Менеджер</Специальность>
+        </row>
+        <row>
+            <ID>32</ID>
+            <Специальность>Мойщик</Специальность>
+        </row>
+        <row>
+            <ID>39</ID>
+            <Специальность>Кладовщик</Специальность>
+        </row>
+        <row>
+            <ID>40</ID>
+            <Специальность>Механик</Специальность>
+        </row>
+    </specializations>
+</service_station>

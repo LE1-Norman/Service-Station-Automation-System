@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2710c401-e62e-4fca-9bb0-f8448343efae">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TestAdapter"/>
+	<queryString language="xPath">
+		<![CDATA[/service_station/specializations/row]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="ID"/>
+		<fieldDescription><![CDATA[ID]]></fieldDescription>
+	</field>
+	<field name="Специальность" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="Специальность"/>
+		<fieldDescription><![CDATA[Специальность]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="10" width="400" height="50" uuid="f1f43591-5026-437c-bf3b-3f6a27c8c437"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Отчёт о работе станции технического обслуживания"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="6" width="200" height="24" uuid="bd71e8e1-a7a4-4437-b775-ea810dae05f6"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Список специальностей"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="278" height="20" uuid="633670b4-9ce8-4581-bf87-cfd708668b56">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e6fd3f0-5a00-482e-9874-e144a7b7bce6"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="0" width="277" height="20" uuid="57e9ae7a-54b3-4f70-8896-260e03e65c6b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="984d8e14-5ab4-4d96-98b6-da03a29e6628"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Специальность]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="278" height="30" uuid="afdabbd7-8997-47b3-a213-5c8420888d11">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e6fd3f0-5a00-482e-9874-e144a7b7bce6"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="10" width="277" height="30" uuid="d4ffe81f-bc1d-4a10-820e-af6601aaa58f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="984d8e14-5ab4-4d96-98b6-da03a29e6628"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Специальность}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="30" uuid="42f72c24-b877-40a4-84bf-4c15568611fb"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Это вся информация, которая есть о специальностях на данный момент"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="230" y="18" width="100" height="30" uuid="b264c609-0962-4a36-bcca-c144016b5d4f"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
